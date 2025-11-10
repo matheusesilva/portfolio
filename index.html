@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matheus Silva | Desenvolvedor Back-end</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">&lt;Matheus/&gt;</div>
+        <div class="controls">
+          <div class="language-selector">
+            <button id="pt-br" class="active">PT</button>
+            <button id="en">EN</button>
+            <button id="jp">JP</button>
+          </div>
+          <div class="theme-toggle">
+            <label class="toggle-switch">
+              <input type="checkbox" id="theme-toggle" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="profile-section">
+          <img
+            src="https://avatars.githubusercontent.com/u/113278419?s=400&amp;u=9207f18f1ed085d87db6fc2234c2b1739c061738&amp;v=4"
+            alt="Matheus Silva"
+            class="profile-pic"
+          />
+          <div class="profile-text">
+            <h1 id="greeting">
+              Olá, eu sou <span class="highlight">Matheus Silva</span>
+            </h1>
+            <p id="tagline">
+              Desenvolvedor Back-end | Python, Javascript, Docker e AWS | Inglês
+              Fluente | JLPT N3
+            </p>
+
+            <div class="profile-buttons">
+              <a
+                href="https://github.com/matheusesilva"
+                target="_blank"
+                class="profile-btn"
+              >
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/matheusedasilva"
+                target="_blank"
+                class="profile-btn"
+              >
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1OX6--6wk8DwJQUwZiSnpDDr_hxCoplOR/view?usp=sharing"
+                target="_blank"
+                class="profile-btn"
+              >
+                <i class="fas fa-file"></i>
+                Currículo
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="about">
+          <h2 id="about-title">Resumo</h2>
+          <p id="about-text">
+            Sou um profissional em transição de carreira para Desenvolvimento
+            Back-end. Minha experiência anterior em consultoria me proporcionou
+            uma visão analítica, estratégica e de alta responsabilidade,
+            complementada por uma disciplina de aprendizado contínuo e
+            disposição para dominar novas tecnologias. No momento estou
+            aprendendo mais sobre APIs em Java usando o framework Spring Boot,
+            enquanto finalizo o MBA em Engenharia de Software.
+          </p>
+        </section>
+
+        <section class="section" id="skills">
+          <h2 id="skills-title">Habilidades</h2>
+          <div class="skills">
+            <div class="skill-tag">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fab fa-java"></i>
+              <span>Java</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fab fa-docker"></i>
+              <span>Docker</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fab fa-aws"></i>
+              <span>AWS</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fas fa-database"></i>
+              <span>RabbitMQ</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fab fa-react"></i>
+              <span>React Js</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fab fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fas fa-flask"></i>
+              <span>Flask</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fas fa-leaf"></i>
+              <span>Spring Boot</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fab fa-html5"></i>
+              <span>HTML/CSS</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fas fa-code"></i>
+              <span>Solidity</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <h2 id="projects-title">Projetos</h2>
+          <div class="projects">
+            <div class="project-card">
+              <h3 class="project-title">
+                Agregador de Vagas de Emprego Inteligente
+              </h3>
+              <p class="project-description" id="project1-desc">
+                Sistema de agregação e classificação automatizada de vagas de
+                emprego publicadas no LinkedIn, utilizando Inteligência
+                Artificial. Back end em <strong>Python</strong> com
+                <strong>API Flask</strong>, utilizando
+                <strong>Playwright</strong> para coleta de dados e tratamento
+                das informações com sistema de mensageria
+                <strong>RabbitMQ</strong> e <strong>API Groq</strong>. Front end
+                desenvolvido em vanilla <strong>JavaScript</strong> e
+                <strong>Tailwind CSS</strong>.
+              </p>
+              <a href="#" class="project-link">Ver projeto →</a>
+            </div>
+            <div class="project-card">
+              <h3 class="project-title">Editor de Listas M3U</h3>
+              <p class="project-description" id="project2-desc">
+                Desenvolvimento de uma aplicação web para gerenciamento e edição
+                de listas M3U. API desenvolvida utilizando
+                <strong>Java</strong> com <strong>Spring Boot</strong> e
+                interface web usando <strong>React</strong> e
+                <strong>Bootstrap</strong>. O deploy foi realizado utilizando
+                <strong>Docker</strong> e a aplicação está diponível na
+                plataforma Render.
+              </p>
+              <a href="https://minha-iptv.onrender.com/" class="project-link"
+                >Ver projeto →</a
+              >
+            </div>
+            <div class="project-card">
+              <h3 class="project-title">
+                Plataforma de Crowdfunding Descentralizada
+              </h3>
+              <p class="project-description" id="project3-desc">
+                Projeto de um contrato inteligente desenvolvido em
+                <strong>Solidity</strong> para uma plataforma de crowdfunding
+                totalmente descentralizada, combinando doações com a emissão de
+                NFTs intransferíveis.
+              </p>
+              <a
+                href="https://github.com/matheusilva-usp/FinanciamentoDNFT"
+                class="project-link"
+                >Ver projeto →</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="experience">
+          <h2 id="experience-title">Experiência Profissional</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-date" id="exp1-date">GreenYellow</div>
+                <h3 class="timeline-title" id="exp1-title">
+                  Consultor de Eficiência Energética
+                </h3>
+                <div class="timeline-subtitle" id="exp1-period">
+                  Out 20 - Jul 22
+                </div>
+                <p id="exp1-desc">
+                  Gestão direta de +100 contratos de performance energética,
+                  totalizando mais de 30 GWh de economia anual. Análise de
+                  desvios e anomalias na curva de consumo de clientes.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-date" id="exp2-date">Microblau</div>
+                <h3 class="timeline-title" id="exp2-title">
+                  Assistente Técnico em Eficiência Energética
+                </h3>
+                <div class="timeline-subtitle" id="exp2-period">
+                  Dez 19 - Out 20
+                </div>
+                <p id="exp2-desc">
+                  Desenvolvimento de estudos técnicos e diagnósticos energéticos
+                  dos sistemas de ar condicionado industrial com foco na redução
+                  do consumo energético e na eficiência operacional.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-date" id="exp3-date">
+                  Exército Brasileiro
+                </div>
+                <h3 class="timeline-title" id="exp3-title">
+                  Projetista Elétrico
+                </h3>
+                <div class="timeline-subtitle" id="exp3-period">
+                  Mar 12 - Fev 18
+                </div>
+                <p id="exp3-desc">
+                  Elaboração de projetos de instalações elétricas em baixa e
+                  média tensão, diagramas unifilares, multifilares, quadros de
+                  cargas e demanda utilizando AltoQi Lumine e AutoCAD.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="education">
+          <h2 id="education-title">Formação Acadêmica</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-date" id="edu1-date">2024 - 2025</div>
+                <h3 class="timeline-title" id="edu1-title">
+                  MBA em Engenharia de Software
+                </h3>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-date" id="edu2-date">2019 - 2020</div>
+                <h3 class="timeline-title" id="edu2-title">
+                  MBA em Gestão de Projetos
+                </h3>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-date" id="edu3-date">2019 - 2020</div>
+                <h3 class="timeline-title" id="edu3-title">
+                  Pós-graduação em Gerência de Energia e Eficiência Energética
+                </h3>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-date" id="edu4-date">2012 - 2017</div>
+                <h3 class="timeline-title" id="edu4-title">
+                  Bacharelado em Engenharia Elétrica e Eletrônica
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="courses">
+          <h2 id="courses-title">Cursos e Certificações</h2>
+          <div class="courses-grid">
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="fab fa-square-js"></i>
+              </div>
+              <div class="course-info">
+                <h3 class="course-name" id="course1-name">
+                  Full Stack Javascript
+                </h3>
+                <span class="course-institution" id="course1-institution"
+                  >The Odin Project</span
+                >
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="fab fa-aws"></i>
+              </div>
+              <div class="course-info">
+                <h3 class="course-name" id="course2-name">
+                  AWS Academy Cloud Foundations
+                </h3>
+                <span class="course-institution" id="course2-institution"
+                  >Amazon Web Services</span
+                >
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <div class="course-info">
+                <h3 class="course-name" id="course3-name">
+                  Continuous Delivery & DevOps
+                </h3>
+                <span class="course-institution" id="course3-institution"
+                  >Universidade da Virgínia</span
+                >
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="fas fa-people-group"></i>
+              </div>
+              <div class="course-info">
+                <h3 class="course-name" id="course4-name">
+                  Gestão Ágil de Projetos com Scrum e Kanban
+                </h3>
+                <span class="course-institution" id="course4-institution"
+                  >Senac</span
+                >
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="fas fa-earth-americas"></i>
+              </div>
+              <div class="course-info">
+                <h3 class="course-name" id="course5-name">
+                  IELTS - Overall Band 7
+                </h3>
+                <span class="course-institution" id="course5-institution"
+                  >British Council</span
+                >
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="course-info">
+                <h3 class="course-name" id="course6-name">
+                  Japanese Language Proficiency Test - JLPT N3
+                </h3>
+                <span class="course-institution" id="course6-institution"
+                  >Japan Educational Exchanges and Services</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="gallery">
+          <h2 id="gallery-title">Galeria</h2>
+          <p id="gallery-desc">
+            Já morei na Austrália e no Japão. Meus princiapis hobbies são viajar
+            e andar de bicicleta. No Instagram eu posto todas as minhas
+            aventuras e momentos especiais!
+          </p>
+          <div class="instagram-gallery">
+            <div class="instagram-header">
+              <div class="profile-info">
+                <img
+                  src="https://scontent.cdninstagram.com/v/t51.2885-19/444721839_433057679423012_5166612772875621360_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=108&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=y2reu1hCyCEQ7kNvwEX0a-l&_nc_oc=Adm2a_tPzDoKjnOFOqhWdY1gXVITm9Su-FJ7Mga77PST2D1FvYXM2Yqti6Fh9KKwfg7TPkknNWYB5kaWrffF9dfv&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&oh=00_AfgKgH9u6rTN030jDQ8eF1aOg0DKyHn2Lct1bFGn_Nq3Ng&oe=6917E2B9"
+                  alt="Matheus Eduardo"
+                  class="insta-profile-pic"
+                />
+                <span class="username">vai_matheus</span>
+              </div>
+              <a
+                href="https://www.instagram.com/vai_matheus/"
+                target="_blank"
+                class="profile-btn"
+              >
+                <i class="fab fa-instagram"></i>
+                Instagram
+              </a>
+            </div>
+
+            <div class="gallery-grid">
+              <img
+                src="https://scontent.cdninstagram.com/v/t51.82787-15/516493664_18399370672118442_5455626664605221202_n.webp?_nc_cat=107&ig_cache_key=MzY3MTQyODUxNjc2OTUwNjc2MQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=LXFtzs6ILW8Q7kNvwFWccsH&_nc_oc=AdlZb_tqfkmsCsJ1cQLHE68hUD1mzML_-xvm4P_9r4G77dbuHKm6e1ZJUg6EeLUPrRwnQkwrXdLuLnEKvxPfRIsi&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=CbzNbqYZ4I8gYVbZQ3-zvw&oh=00_AfjGRGIuTi9EpCHY5D8pFvHmD5V2POHAhcSnS61X-Uf_Sw&oe=6917D8A7"
+                alt="Foto 1"
+              />
+              <img
+                src="https://scontent.cdninstagram.com/v/t51.82787-15/515448420_18399055969118442_8997920814799357728_n.webp?_nc_cat=103&ig_cache_key=MzY2OTYzODcwNjI1MzgzMjkwMg%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=k4JYlu12MFsQ7kNvwFVNTV-&_nc_oc=AdmXtBQlzX20mi9XJ-pl5NHvFMBaNRnbJvRoFT4eiiezQBvA1ft7gLiwO8JlWBFS6UTmfBmfMg0GDqWhqMfAsp2B&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=CbzNbqYZ4I8gYVbZQ3-zvw&oh=00_AfiUJ2EwPQ2O0O18g8FqHx2UGvMuSAMMNvrNXPaF0Ymmvg&oe=6917DEF2"
+                alt="Foto 2"
+              />
+              <img
+                src="https://scontent.cdninstagram.com/v/t51.71878-15/491421279_1214915393206759_3331801002600402397_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=MjkwODk4MjI2Mjg3NTIzMTE0NQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjU0MHg5NjAuc2RyLkMzIn0%3D&_nc_ohc=-IoTY5U1f24Q7kNvwHPTcQ_&_nc_oc=AdlbmvUKhp7CfhByxKxdtsltcABXXpAuZRrDvunO9LnMI4A_W7bb9JyurcoEkuOI9RnJlNe_U4y0LMq6BFsQjuHV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=Y3bRb6z0Sxl-ovIUAJUvWQ&oh=00_Afh-m4CzpFbGGpndAnnk2he9z7ujIs-6Ri7yG0AgQ1DwUg&oe=6917FA9C"
+                alt="Foto 3"
+              />
+              <img
+                src="https://scontent.cdninstagram.com/v/t51.71878-15/500266490_1670824023799117_351991670673043088_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=110&ig_cache_key=Mjg5MDc1OTYzNTI3NDc3ODk4OA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjU0MHg5NjAuc2RyLkMzIn0%3D&_nc_ohc=DirTq3T7n_gQ7kNvwHMd7UO&_nc_oc=AdmqozD_3bkQac_zWw3ExH22GRkWqplxe_tdASwna59Mj7nGqMk55Vy_xIn49mu94-wjj6wx0d2i0acr-juRVPSA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=Y3bRb6z0Sxl-ovIUAJUvWQ&oh=00_Afi_9ehOgQGSlALpSHivNRtegP8F7iR0yTEoZ1zGhKv_iA&oe=6917F6A1"
+                alt="Foto 4"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p id="footer-text">
+          &copy; 2023 Matheus Silva. Todos os direitos reservados.
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
