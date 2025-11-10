@@ -9,12 +9,18 @@ const translations = {
       "Sou um profissional em transição de carreira para Desenvolvimento Back-end. Minha experiência anterior em consultoria me proporcionou uma visão analítica, estratégica e de alta responsabilidade, complementada por uma disciplina de aprendizado contínuo e disposição para dominar novas tecnologias. No momento estou aprendendo mais sobre APIs em Java usando o framework Spring Boot, enquanto finalizo o MBA em Engenharia de Software.",
     skillsTitle: "Habilidades",
     projectsTitle: "Projetos",
+    project1Title: "Agregador de Vagas de Emprego Inteligente",
     project1Desc:
       "Sistema de agregação e classificação automatizada de vagas de emprego publicadas no LinkedIn, utilizando Inteligência Artificial. Back end em <strong>Python</strong> com <strong>API Flask</strong>, utilizando <strong>Playwright</strong> para coleta de dados e tratamento das informações com sistema de mensageria <strong>RabbitMQ</strong> e <strong>API Groq</strong>. Front end desenvolvido em vanilla <strong>JavaScript</strong> e <strong>Tailwind CSS</strong>.",
+    project1Link: "Ver projeto →",
+    project2Title: "Editor de Listas M3U",
     project2Desc:
       "Desenvolvimento de uma aplicação web para gerenciamento e edição de listas M3U. API desenvolvida utilizando <strong>Java</strong> com <strong>Spring Boot</strong> e interface web usando <strong>React</strong> e <strong>Bootstrap</strong>. O deploy foi realizado utilizando <strong>Docker</strong> e a aplicação está diponível na plataforma Render.",
+    project2Link: "Ver projeto →",
+    project3Title: "Plataforma de Crowdfunding Descentralizada",
     project3Desc:
       "Projeto de um contrato inteligente desenvolvido em <strong>Solidity</strong> para uma plataforma de crowdfunding totalmente descentralizada, combinando doações com a emissão de NFTs intransferíveis.",
+    project3Link: "Ver projeto →",
     galleryTitle: "Galeria",
     galleryDesc:
       "Já morei na Austrália e no Japão. Meus princiapis hobbies são viajar e andar de bicicleta. No Instagram eu posto todas as minhas aventuras e momentos especiais!",
@@ -67,12 +73,18 @@ const translations = {
       "I am a professional transitioning to Back-end Development. My previous experience in consulting provided me with an analytical, strategic, and high-responsibility perspective, complemented by a discipline of continuous learning and willingness to master new technologies. Currently, I'm learning more about Java APIs using the Spring Boot framework while finishing my MBA in Software Engineering.",
     skillsTitle: "Skills",
     projectsTitle: "Projects",
+    project1Title: "Intelligent Job Vacancy Aggregator",
     project1Desc:
       "System for automated aggregation and classification of job vacancies published on LinkedIn, using Artificial Intelligence. Back end in <strong>Python</strong> with <strong>Flask API</strong>, using <strong>Playwright</strong> for data collection and information processing with <strong>RabbitMQ</strong> messaging system and <strong>Groq API</strong>. Front end developed in vanilla <strong>JavaScript</strong> and <strong>Tailwind CSS</strong>.",
+    project1Link: "View project →",
+    project2Title: "M3U List Editor",
     project2Desc:
       "Development of a web application for managing and editing M3U lists. API developed using <strong>Java</strong> with <strong>Spring Boot</strong> and web interface using <strong>React</strong> and <strong>Bootstrap</strong>. Deployment was done using <strong>Docker</strong> and the application is available on the Render platform.",
+    project2Link: "View project →",
+    project3Title: "Decentralized Crowdfunding Platform",
     project3Desc:
       "Project of a smart contract developed in <strong>Solidity</strong> for a fully decentralized crowdfunding platform, combining donations with the issuance of non-transferable NFTs.",
+    project3Link: "View project →",
     galleryTitle: "Gallery",
     galleryDesc:
       "I've lived in Australia and Japan. My main hobbies are traveling and cycling. On Instagram I post all my adventures and special moments!",
@@ -126,12 +138,18 @@ const translations = {
       "私はバックエンド開発に移行している専門家です。コンサルティングでの以前の経験は、分析的、戦略的、そして高い責任感のある視点を私に提供し、継続的な学習と新しい技術を習得する意欲によって補完されています。現在、Spring Bootフレームワークを使用したJava APIについてさらに学びながら、ソフトウェアエンジニアリングのMBAを修了しています。",
     skillsTitle: "スキル",
     projectsTitle: "プロジェクト",
+    project1Title: "インテリジェント求人情報アグリゲーター",
     project1Desc:
       "LinkedInに掲載された求人情報の自動収集と分類のシステムで、人工知能を利用しています。バックエンドは<strong>Python</strong>と<strong>Flask API</strong>で、データ収集には<strong>Playwright</strong>、情報処理には<strong>RabbitMQ</strong>メッセージングシステムと<strong>Groq API</strong>を使用しています。フロントエンドはバニラ<strong>JavaScript</strong>と<strong>Tailwind CSS</strong>で開発されました。",
+    project1Link: "プロジェクトを見る →",
+    project2Title: "M3Uリストエディター",
     project2Desc:
       "M3Uリストの管理と編集のためのウェブアプリケーションの開発。APIは<strong>Java</strong>と<strong>Spring Boot</strong>を使用して開発され、ウェブインターフェースは<strong>React</strong>と<strong>Bootstrap</strong>を使用しています。デプロイは<strong>Docker</strong>を使用して行われ、アプリケーションはRenderプラットフォームで利用可能です。",
+    project2Link: "プロジェクトを見る →",
+    project3Title: "分散型クラウドファンディングプラットフォーム",
     project3Desc:
       "完全に分散されたクラウドファンディングプラットフォーム向けに<strong>Solidity</strong>で開発されたスマートコントラクトのプロジェクトで、寄付と非移転性NFTの発行を組み合わせています。",
+    project3Link: "プロジェクトを見る →",
     galleryTitle: "ギャラリー",
     galleryDesc:
       "私はオーストラリアと日本に住んだことがあります。主な趣味は旅行とサイクリングです。Instagramではすべての冒険と特別な瞬間を投稿しています！",
@@ -185,9 +203,15 @@ const elements = {
   aboutText: document.getElementById("about-text"),
   skillsTitle: document.getElementById("skills-title"),
   projectsTitle: document.getElementById("projects-title"),
+  project1Title: document.getElementById("project1-title"),
   project1Desc: document.getElementById("project1-desc"),
+  project1Link: document.getElementById("project1-link"),
+  project2Title: document.getElementById("project2-title"),
   project2Desc: document.getElementById("project2-desc"),
+  project2Link: document.getElementById("project2-link"),
+  project3Title: document.getElementById("project3-title"),
   project3Desc: document.getElementById("project3-desc"),
+  project3Link: document.getElementById("project3-link"),
   galleryTitle: document.getElementById("gallery-title"),
   galleryDesc: document.getElementById("gallery-desc"),
   experienceTitle: document.getElementById("experience-title"),
@@ -245,9 +269,15 @@ function changeLanguage(lang) {
   elements.aboutText.textContent = translations[lang].aboutText;
   elements.skillsTitle.textContent = translations[lang].skillsTitle;
   elements.projectsTitle.textContent = translations[lang].projectsTitle;
+  elements.project1Title.textContent = translations[lang].project1Title;
   elements.project1Desc.innerHTML = translations[lang].project1Desc;
+  elements.project1Link.textContent = translations[lang].project1Link;
+  elements.project2Title.textContent = translations[lang].project2Title;
   elements.project2Desc.innerHTML = translations[lang].project2Desc;
+  elements.project2Link.textContent = translations[lang].project2Link;
+  elements.project3Title.textContent = translations[lang].project3Title;
   elements.project3Desc.innerHTML = translations[lang].project3Desc;
+  elements.project3Link.textContent = translations[lang].project3Link;
   elements.galleryTitle.textContent = translations[lang].galleryTitle;
   elements.galleryDesc.textContent = translations[lang].galleryDesc;
   elements.experienceTitle.textContent = translations[lang].experienceTitle;
